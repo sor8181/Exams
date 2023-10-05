@@ -1,0 +1,24 @@
+#Question 1
+#studentName = Shane O' Rourke
+taylorSwiftSongs = ['Love Story','Blank Space','Shake it Off','Bad Blood','Delicate','You Belong with Me','Wildest Dreams','Red','All too well','22'] #(a)
+song = input("Enter a Taylor Swift song:") #(b)
+
+if song in taylorSwiftSongs:
+    position = taylorSwiftSongs.index(song)
+    position1 = position + 1
+    print("The song",song,"is in the list at position",position1,"out of 10 songs")
+else:
+    print("Sorry, the song,",song,"is not in Talor Swift's song list.")
+#line 6 to 11 is part(c)
+
+
+#Question 2
+#Shane 0' Rourke
+print("Welcome to Temperature Alert System")
+temp = int(input("Enter a temperature in degrees Celsius:"))
+if temp <20:
+    print("Too cold. Turn up heating.")
+elif 20<= temp <=24:
+    print("Temperature is just right.")
+else:
+    print("Too warm. Turn down heating.")
