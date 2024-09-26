@@ -1,0 +1,18 @@
+# Question 1 (b)
+# Student name:
+
+import random
+
+computer_options = ["rock", "paper", "scissors"]
+
+computer_choice = computer_options[random.randint(0,2)]
+
+player_choice = input("Player chose:") #(i)
+print("Computer chose:",computer_choice) #(i)
+
+if computer_choice == player_choice: #(ii) lines 13-18
+    print("Draw")
+elif computer_choice == "rock" and player_choice == "paper" or computer_choice == "scissors" and player_choice == "rock" or computer_choice == "paper" and player_choice == "scissors": #(ii)
+    print("Player wins")
+else:
+    print("Computer wins")
