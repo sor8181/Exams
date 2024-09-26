@@ -1,0 +1,19 @@
+# Question 1 (a)
+# Student name:
+
+print("This program can find the perimeter or area of a quadrilateral") #(i)
+
+length = float(input("Please enter the length:")) #(iii)
+width = float(input("Please enter the width:")) #(iii)
+
+name = input("Please enter your user name:") #(ii)
+
+choice = input("Do you want to find the (p)erimeter or (a)rea?")
+if choice == "p":
+    perimeter = (length*2) + (width*2) #(vi)
+    print("A quadrilateral with a length of",length,"and a width of",width,"has a perimeter of",round(perimeter,2)) #(iv) #(v)
+elif choice == "a":
+    area = (length*width)
+    print("A quadrilateral with a length of",length,"and a width of",width,"has an area of",round(area,2)) #(iv) #(v)
+    
+print("Thank you for using this program",name) #(ii)
