@@ -1,0 +1,11 @@
+# Question 2
+# Student name: Shane O' Rourke
+
+def ticketsales():
+    vip = int(input("Enter how many VIP tickets sold:")) #(Asks user how many tickets were sold)
+    regular = int(input("Enter how many regular tickets sold:")) 
+    budget = int(input("Enter how many budget tickets sold:"))
+    total = (vip*150) + (regular*75) +  (budget*40) #(Calculates total amount)
+    print("€",total,"in total sales") #(Displays money made)
+    
+ticketsales()
