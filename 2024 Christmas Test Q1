@@ -1,0 +1,40 @@
+# Question 1
+# Name: Shane O' Rourke
+from random import choice
+
+fruits = ['apple', 'cherry', 'orange']
+
+random_fruit_1 = choice(fruits)
+random_fruit_2 = choice(fruits) #(ii)
+random_fruit_3 = choice(fruits) #(ii)
+
+print("Random Fruit 1:",random_fruit_1) #(i)
+print("Random Fruit 2:",random_fruit_2) #(ii)
+print("Random Fruit 3:",random_fruit_3) #(ii)
+print()
+if random_fruit_1 == 'cherry': #(iii)
+    print("First fruit is cherry") #(iii)
+if random_fruit_1 == random_fruit_2: #(iv)
+    print("First pair match") #(iv)
+if random_fruit_1 == 'cherry' and random_fruit_2 == 'cherry': #(v)
+    print("First pair are cherries") #(v)
+if random_fruit_1 == random_fruit_2 or random_fruit_1 == random_fruit_3 or random_fruit_2 == random_fruit_3: #(vi)
+    print("Matching pair") #(vi)
+print()
+
+count = 0 #(vii) lines 24-39
+apple_count = 0
+cherry_count = 0
+orange_count = 0
+while count <100:
+    random_fruit = choice(fruits)
+    if random_fruit == 'cherry':
+        cherry_count = cherry_count + 1
+    elif random_fruit == 'apple':
+        apple_count = apple_count + 1
+    else:
+        orange_count = orange_count + 1
+    count = count + 1
+print("apple", apple_count)
+print("cherry", cherry_count)
+print("orange", orange_count)
