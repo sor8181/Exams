@@ -1,0 +1,5 @@
+print("Split Bill Calculator") #Displays title
+amount = int(input("How much is the bill?:")) #user enters the total amount of the bill
+people = int(input("How many people?:")) #user enters the number of people that will be splitting the bill
+owed = amount/people #Divides the total amount of the bill by the number of people
+print("You each owe", owed) #Displays how much each person owes
